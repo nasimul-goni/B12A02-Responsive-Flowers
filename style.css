@@ -1,4 +1,3 @@
-
 /* ---Common section--- */
 
 * {
@@ -7,7 +6,7 @@
     background: rgb(245, 248, 255);
 }
 
-.container{
+.container {
     max-width: 1144px;
     margin: auto;
 }
@@ -26,24 +25,24 @@
 
 
 .noto-serif {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
-.grey-letter{
+.grey-letter {
     font-weight: 400;
-    color:#8987A1;
+    color: #8987A1;
 }
 
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.banner-heading-letter{
+.banner-heading-letter {
     color: #E95A08;
 }
 
@@ -69,32 +68,33 @@
     text-decoration: none;
 }
 
-.home{
+.home {
     font-weight: 700;
     color: #252432;
 }
 
-.cart-letter{
+.cart-letter {
     font-weight: 400;
     color: #000000;
 }
 
-.banner{
+.banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     margin-top: 120px;
-    
+
 }
 
-.banner-heading{
+.banner-heading {
     font-size: 65px;
     font-weight: 700;
 
 }
 
-.banner-pera{
+.banner-pera,
+.plant-pera {
     font-weight: 400;
     align-self: stretch;
     font-size: 22px;
@@ -104,47 +104,136 @@
 
 @media screen and (max-width: 576px) {
 
-    .flower-market-nav{
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .flower-market-nav {
         margin: 16px 13px 16.18px 23px;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
         gap: 50px;
     }
-    .home, .shop, .about-us{
-        display: none; 
+
+    .home,
+    .shop,
+    .about-us {
+        display: none;
     }
 
-    .logo{
+    .logo {
         height: 38px;
         width: 63px;
     }
-    .banner{
+
+    .banner {
         display: flex;
         flex-direction: column-reverse;
-        
+
     }
-    .banner-text{
+
+    .banner-text {
+        max-width: 393px;
+        margin: auto;
         margin-top: 28px;
     }
 
-    .banner-heading{
+    .banner-heading {
         font-size: 24px;
 
     }
-    .banner-pera{
+
+    .banner-pera {
         font-size: 14px;
-        
-    }
-    
-    .banner-image{
-        width: 393px;
-        height: 245px;                 
+
     }
 
-    .flower-image{
+    .banner-image {
+        width: 393px;
+        height: 245px;
+    }
+
+    .flower-image {
         width: 100%;
         height: auto;
     }
-       
+
 }
 
+/* PLANT DETAILS */
+
+.plant-details {
+    margin-top: 120px;
+}
+
+.plant-text {
+    text-align: center;
+}
+
+.plant-heading {
+    font-size: 50px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: 600px;
+    width: 270px;
+    height: 50px;
+    padding: 19px 80px;
+    align-items: center;
+
+}
+
+.plant-card-text {
+    width: 270px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 576px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .plant-details {
+        margin-top: 100px;
+        max-width: 393px;
+        margin: auto;
+
+    }
+
+    .plant-text {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .plant-heading {
+        font-size: 24px;
+    }
+
+    .plant-pera {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .card {
+        max-width: 362px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+
+}
