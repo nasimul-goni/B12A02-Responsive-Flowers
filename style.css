@@ -2,9 +2,14 @@
 /* ---Common section--- */
 
 * {
-    max-width: 1140px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
     background: rgb(245, 248, 255);
+}
+
+.container{
+    max-width: 1144px;
+    margin: auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -38,6 +43,9 @@
     display: flex;
 }
 
+.banner-heading-letter{
+    color: #E95A08;
+}
 
 /* -----header section---- */
 
@@ -71,6 +79,29 @@
     color: #000000;
 }
 
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 120px;
+    
+}
+
+.banner-heading{
+    font-size: 65px;
+    font-weight: 700;
+
+}
+
+.banner-pera{
+    font-weight: 400;
+    align-self: stretch;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
 @media screen and (max-width: 576px) {
 
     .flower-market-nav{
@@ -87,6 +118,33 @@
         height: 38px;
         width: 63px;
     }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .banner-text{
+        margin-top: 28px;
+    }
 
+    .banner-heading{
+        font-size: 24px;
+
+    }
+    .banner-pera{
+        font-size: 14px;
+        
+    }
+    
+    .banner-image{
+        width: 393px;
+        height: 245px;                 
+    }
+
+    .flower-image{
+        width: 100%;
+        height: auto;
+    }
        
 }
+
