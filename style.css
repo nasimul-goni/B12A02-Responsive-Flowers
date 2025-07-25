@@ -291,3 +291,13 @@
 
 
 }
+
+/* flower and plant lover section */
+
+.plants-lover{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-between ;
+    margin-top: 211px;
+}
