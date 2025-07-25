@@ -182,6 +182,24 @@
     gap: 10px;
 }
 
+.card .plant-card img {
+    height: 323px;
+    width: 100%;
+}
+
+.usd,
+.lily {
+    font-size: 22px;
+}
+
+.lily {
+    font-weight: 500;
+}
+
+.usd {
+    font-weight: 700;
+}
+
 .btn {
     background-color: #E95A08;
     color: #FFFFFF;
@@ -231,9 +249,45 @@
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        flex: 1;
         margin-top: 30px;
         gap: 10px;
+
     }
+
+    .plant-card {
+        display: flex;
+        flex-direction: column;
+        width: 171px;
+        height: 340px
+    }
+
+    .plant-card-text {
+        max-width: 100%;
+    }
+
+    .btn {
+        max-width: 100%;
+        height: 50px;
+        font-size: ;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .usd,
+    .lily {
+        font-size: 16px;
+    }
+
+    .lily {
+        font-weight: 500;
+    }
+
+    .usd {
+        font-weight: 700;
+    }
+
+
 
 
 }
