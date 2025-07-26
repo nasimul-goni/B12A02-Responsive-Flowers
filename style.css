@@ -171,7 +171,8 @@
     text-align: center;
 }
 
-.plant-heading {
+.plant-heading,
+.latest-deals-heading {
     font-size: 50px;
 }
 
@@ -259,7 +260,7 @@
         display: flex;
         flex-direction: column;
         width: 171px;
-        height: 340px
+        height: 340px;
     }
 
     .plant-card-text {
@@ -294,10 +295,196 @@
 
 /* flower and plant lover section */
 
-.plants-lover{
+.plants-lover {
+    width: 1140px;
+    height: 597px;
     display: flex;
     flex-direction: row;
     gap: 60px;
-    justify-content: space-between ;
+    justify-content: space-between;
     margin-top: 211px;
+
+}
+
+.plants-lover-image {
+    width: 540px;
+    height: 597px;
+
+}
+
+.plants-lover-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plants-lover-heading {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.plants-lover-text {
+    width: 540px;
+    height: 521px;
+    margin: 38px 0 38px 40px;
+
+
+}
+
+.plants-lover-pera {
+    padding-left: 30px;
+}
+
+.plants-lover-li {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .plants-lover {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .plants-lover-image {
+        width: 358px;
+        height:
+            margin: auto;
+        margin-left: 18px;
+
+    }
+
+    .plants-lover-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .plants-lover-text {
+        width: 361px;
+        height: 234px;
+        margin: 18px 0;
+        gap: 16px;
+
+
+    }
+
+    .plants-lover-heading {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .plants-lover-li {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+
+    }
+
+    .plants-lover-text {
+        margin-left: 17px;
+    }
+
+}
+
+/* latest deal sections */
+
+.latest-deals-text {
+    text-align: center;
+
+}
+
+
+.latest-deals-pera {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.latest-deals {
+    display: flex;
+}
+
+.container {
+    box-sizing: border-box;
+
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+
+}
+
+.text {
+    position: absolute;
+    color: black;
+    left: 100px;
+    bottom: 20px;
+
+
+
+}
+
+/* news letter section */
+
+.mother {
+    width: 1140px;
+    height: 533px;
+    border: 2px solid tomato;
+    background-color: aqua;
+    position: relative;
+}
+
+.mother img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.child {
+    width: 830px;
+    height: 141px;
+    border: 2px solid transparent;
+    background:transparent;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child p {
+    background: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.child input{
+    width: 644px;
+    height: 50px;
+}
+
+.email-sub{
+    display: flex;
+    flex-direction: row;
+}
+
+.child button{
+    background-color: orangered;
+    width: 186px;
 }
