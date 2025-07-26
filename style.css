@@ -442,8 +442,6 @@
 .mother {
     width: 1140px;
     height: 533px;
-    border: 2px solid tomato;
-    background-color: aqua;
     position: relative;
 }
 
@@ -457,14 +455,15 @@
     width: 830px;
     height: 141px;
     border: 2px solid transparent;
-    background:transparent;
+    background: transparent;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .child p {
@@ -474,17 +473,96 @@
     color: white;
 }
 
-.child input{
+.child input {
     width: 644px;
     height: 50px;
 }
 
-.email-sub{
+.email-sub {
     display: flex;
     flex-direction: row;
+    gap: 0px ;
 }
 
-.child button{
+.child button {
     background-color: orangered;
     width: 186px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
 }
+
+@media screen and (max-width: 576px) {
+
+    .mother {
+        width: 393px;
+        height: 276px;
+        position: relative;
+    }
+
+    .child {
+        width: 830px;
+        height: 141px;
+        background: transparent;
+        position: absolute;
+        display: flex;
+        top: 30%;
+        left: -55%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .child p {
+        background: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .child input {
+        width: 218px;
+        height: 50px;
+    }
+
+    .email-sub {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .child button {
+        background-color: orangered;
+        width: 103px;
+    }
+
+
+}
+
+/* footer section */
+
+.footer{
+    background-color:;
+    width: 1120px;
+    height: 248px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.footer p{
+    color: #6B7280;
+}
+
+.list-1, .list-2 li{
+    list-style: none;
+    color: #6B7280;
+    
+}
+
+.logo{
+    gap: 14px;
+}
+
